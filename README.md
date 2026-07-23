@@ -6,6 +6,12 @@ Master's thesis in International and Environmental Economics, Université Paris 
 
 Professional football is one of the most globalized high-skill labor markets in the world. Over 1995–2023, close to 80,000 international player transfers were recorded between emerging economies and the European "Big Five" leagues. For many developing countries these flows are a significant form of high-value-added service exports, yet they are almost never captured in official trade statistics and rarely studied with modern trade and migration econometrics. This thesis fills that gap.
 
+The financial dominance of the Big Five is the structural backbone of this market: their revenues have grown steadily for two decades, with the Premier League alone surpassing €8 billion in 2023/24.
+
+<p align="center">
+  <img src="outputs/big_five_revenues.png" width="80%" alt="Revenue levels of the Big Five European leagues, 2004/05–2023/24">
+</p>
+
 ## Research question
 
 Beyond athletic merit, which economic, geographic and cultural factors structure the persistent migration of football talent from emerging nations to the Big Five, and what drives the durability of these bilateral transfer corridors?
@@ -13,6 +19,10 @@ Beyond athletic merit, which economic, geographic and cultural factors structure
 ## Data
 
 The analysis relies on an original bilateral panel of 11,795 origin–destination–year observations, built as a full Cartesian product of origin countries, the five destination leagues, and years from 1995 to 2023. Country pairs with no transfer are kept as explicit zero flows, which is essential for consistent PPML estimation. As a result, 56.5% of observations are strict zeros. Concentration is extreme: 12.7% of corridors account for 80% of all transfers.
+
+<p align="center">
+  <img src="outputs/lorenz_curve.png" width="70%" alt="Lorenz curve of transfer concentration across corridors">
+</p>
 
 Sources:
 
@@ -43,10 +53,6 @@ The specification is validated with a RESET test, which confirms PPML (p = 0.112
 4. The brain drain is not permanent. An inverted-U relationship in origin GDP (positive linear, negative quadratic term) shows talent exports rising with early development, then falling once domestic leagues grow rich enough to retain elite players.
 
 The preferred PPML specification reaches a pseudo-R² of 0.829.
-
-<p align="center">
-  <img src="outputs/players_exported_by_country.png" width="75%" alt="Players exported to the Big Five by country of origin">
-</p>
 
 ## Repository
 
